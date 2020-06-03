@@ -1,10 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import 'settings';
+@import 'header';
+@import 'navigation';
+@import 'content';
+@import 'aside';
 
-div {
-    width: 300px;
-    height: 300px;
-    background-color: #dd32e3;
-}

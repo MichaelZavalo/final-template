@@ -1,5 +1,27 @@
-*{
+/*setting
+----------------------------------------*/
+@font-face {
+    font-family: 'deftonestylus';
+    src: url('../fonts/deftonestylus.ttf');
+}
+@font-face {
+    font-family: 'myriad-reg';
+    src: url('../fonts/myriad-reg.otf');
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'lato','myriad-reg', sans-serif;
+    font-weight: 400;
+}
+$primary-color: linear-gradient(left, #fd4e75, #fc7858);
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
