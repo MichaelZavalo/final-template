@@ -1,7 +1,12 @@
 main {
     background-color: #ebebeb;
-    padding:22px 22px 22px 92px;
+    padding:22px;
     display: flex;
-    max-width: 1104px;
+    max-width: 1080px;
     flex-wrap: wrap;
+    .container-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
+

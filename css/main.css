@@ -21,18 +21,29 @@ button:hover {
   cursor: pointer;
 }
 
-body {
+.wraper {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1366px;
+}
+
+.container-inner {
+  display: flex;
+  max-width: 94.8%;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container-inner-content {
+  display: flex;
+  max-width: 1296px;
 }
 
 /*header
 ------------------------------------------*/
 header {
-  padding-left: 70px;
+  max-width: 1300px;
   max-height: 166px;
-  width: 100%;
   -webkit-box-shadow: 1px 18px 39px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 18px 39px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 18px 39px 0px rgba(0, 0, 0, 0.1);
@@ -227,20 +238,13 @@ header .add-statistic {
 /*navigation menu
 -----------------------------------------------*/
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
   max-width: 70px;
-  max-height: 1000px;
   display: flex;
   flex-direction: column;
   background: -webkit-linear-gradient(bottom, #fd4e75, #fc7858);
-}
-nav .container {
   -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  height: 1000px;
 }
 nav .navigation {
   display: flex;
@@ -335,7 +339,7 @@ nav .navigation .quires::before {
 }
 nav .power-off {
   width: 100%;
-  margin-top: 780%;
+  margin-top: auto;
   transition-duration: 1s;
   height: 20px;
   margin-bottom: 20px;
@@ -352,9 +356,13 @@ nav .power-off > img {
 
 main {
   background-color: #ebebeb;
-  padding: 22px 22px 22px 92px;
+  padding: 22px;
   display: flex;
-  max-width: 1104px;
+  max-width: 1080px;
+  flex-wrap: wrap;
+}
+main .container-main {
+  display: flex;
   flex-wrap: wrap;
 }
 

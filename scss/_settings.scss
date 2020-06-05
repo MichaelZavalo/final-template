@@ -20,8 +20,18 @@ button:hover {
     cursor: pointer;
 }
 
-body {
+.wraper {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1366px;
+}
+.container-inner {
+    display: flex;
+    max-width: 94.8%;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+.container-inner-content {
+    display: flex;
+    max-width: 1296px;
 }

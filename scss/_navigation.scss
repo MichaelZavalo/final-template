@@ -1,20 +1,13 @@
 /*navigation menu
 -----------------------------------------------*/
 nav {
-    position: absolute;
-    top: 0;
-    left: 0;
     max-width: 70px;
-    max-height: 1000px;
     display: flex;
     flex-direction: column;
     background: -webkit-linear-gradient( bottom, #fd4e75, #fc7858);
-    .container {
-        -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        height: 1000px;
-    }
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.2);
     .navigation {
         display: flex;
         flex-direction: column;
@@ -108,7 +101,7 @@ nav {
     }
     .power-off {
         width: 100%;
-        margin-top: 780%;
+        margin-top: auto;
         transition-duration: 1s;
         height: 20px;
         margin-bottom: 20px;
