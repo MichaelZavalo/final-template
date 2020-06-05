@@ -542,7 +542,7 @@ main .container-inner-top {
   margin-top: 13px;
 }
 .block-feeds .block-top {
-  margin-top: 30px;
+  margin-top: 34px;
   display: flex;
   justify-content: space-between;
 }
@@ -912,9 +912,10 @@ aside .container-acters > div:last-of-type {
   border-bottom: none;
 }
 aside .container-acters .name {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 110px;
-  padding-top: 10px;
 }
 aside .container-acters p {
   font-size: 13px;
@@ -997,6 +998,9 @@ aside .social a {
   background-position: center;
   align-items: center;
   justify-content: center;
+  -webkit-box-shadow: inset 0px 0px 6px 0px white;
+  -moz-box-shadow: inset 0px 0px 6px 0px white;
+  box-shadow: inset 0px 0px 6px 0px white;
 }
 aside .social .rdio {
   background: -webkit-linear-gradient(120deg, #6359b0, #b26ae1);
