@@ -1,3 +1,166 @@
+/*aside
+--------------------------------------------*/
 aside {
-    width: 273px;
+    width: 289px;
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-btn {
+        display: flex;
+        background: -webkit-linear-gradient(left, #fd4e75, #fc7858);
+        & button {
+            line-height: 50px;
+        }
+        button {
+            width: 90px;
+            background-color: initial;
+            border: none;
+            position: relative;
+        }
+        button:hover, button:active {
+            background-color: rgba($color: #000000, $alpha: .2);
+        }
+        .active:after {
+            content:"";
+            display: block;
+            position: absolute;
+            bottom:auto;
+            left: 39px;
+            border-left: 6px solid transparent;
+            border-top: 6px solid #FD5670;
+            border-right: 6px solid transparent;
+        }
+    }
+/*container-acters
+--------------------------------------------*/
+    .container-acters {
+        display: flex;
+        flex-direction: column;
+        max-height: 516px;
+        overflow-y: scroll;
+        > div {
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 2px solid #F1F1F1;
+            width: 85%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        >div:first-of-type {
+            padding-top: 24px;
+        }
+        >div:last-of-type {
+            border-bottom: none;
+        }
+        .name {
+            align-items: center;
+            width: 110px;
+            padding-top: 10px;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 700;
+            color: #777;
+        }
+        span {
+            font-size: 10px;
+            color: #bfbfbf;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: inherit;
+        }
+        button:hover {
+            background-color: #f5f5dc;
+        }
+    }
+/*form
+--------------------------------------------*/
+    form {
+        background-color: #fcfcfc;
+        line-height: 50px;
+        display: flex;
+        justify-content: space-around;
+        input {
+            background-color: inherit;
+            border: none;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 23px;
+            height: 20px;
+        }
+        .text {
+            font-size: 10px;
+            color: #c0c0c0;
+            font-weight: 300;
+            border-bottom: 2px solid #E9E9E9;
+            width: 160px;
+            height: 40px;
+        }
+        .search {
+            background-image: url(../img/aside/zoom-in.png);
+        }
+        .write {
+            background-image: url(../img/aside/pen.png);
+        }
+        .search:hover, .write:hover {
+            cursor: pointer;
+            background-color: #a37f76;
+        }
+    }
+/*social
+--------------------------------------------*/
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 29px 39px;
+        p {
+            font-size: 14px;
+            font-weight: 700;
+            color: #777777;
+        }
+        .top-icons {
+            margin-top: 30px;
+        }
+        .bottom-icons {
+            margin-top: 16px;
+        }
+        .top-icons, .bottom-icons {
+            line-height: 55px;
+            display: flex;
+            justify-content: space-between;
+            width: 192px;
+        }
+        a {
+            display: flex;
+            width: 55px;
+            height: 55px;
+            border-radius: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .rdio {
+            background: -webkit-linear-gradient( 120deg, #6359b0, #b26ae1);
+        }
+        .css-3 {
+            background: -webkit-linear-gradient( 120deg, #4bb9c3, #52e7c5);
+        }
+        .deviantart {
+            background: -webkit-linear-gradient( 120deg, #ad6a77, #f6b797);
+        }
+        .xing {
+            background: -webkit-linear-gradient( 120deg, #8841af, #708ae6);
+        }
+        .vimeo {
+            background: -webkit-linear-gradient( 120deg, #5885e8, #29cddd);
+        }
+        .vk {
+            background: -webkit-linear-gradient( 120deg, #f48982, #fbda89);
+        }
+    }
 }

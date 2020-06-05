@@ -16,18 +16,23 @@
     font-weight: 400;
 }
 $primary-color: linear-gradient(left, #fd4e75, #fc7858);
-button:hover {
+
+button:hover, input:hover {
     cursor: pointer;
+    background-color: #f5f5dc;
 }
 
+li {
+    list-style-type: none;
+}
 .wraper {
     display: flex;
-    flex-wrap: wrap;
     max-width: 1366px;
+    margin: 0 auto;
 }
 .container-inner {
     display: flex;
-    max-width: 94.8%;
+    max-width: 1300px;
     flex-direction: column;
     flex-wrap: wrap;
 }

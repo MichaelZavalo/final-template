@@ -3,9 +3,6 @@
 header {
     max-width: 1300px;
     max-height: 166px;
-    -webkit-box-shadow: 1px 18px 39px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 1px 18px 39px 0px rgba(0,0,0,0.1);
-    box-shadow: 1px 18px 39px 0px rgba(0,0,0,0.1);
     .container-top {
         max-width: 1298px;
         display: flex;
@@ -92,6 +89,9 @@ header {
             border-left: none;
             width: 40px;
         }       
+    }
+    button:hover {
+        background-color: #f5f5dc;
     }
     .search {
         background-color: #f8f8f8;

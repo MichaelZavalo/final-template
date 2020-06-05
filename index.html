@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final-template</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -96,7 +96,7 @@
             </header>
             <div class="container-inner-content">
                 <main>
-                    <div class="container-main">
+                    <div class="container-inner-top">
                         <div class="block-monthly-progress">
                             <div class="name">
                                 <p>Monthly Revenue Progress</p>
@@ -107,64 +107,149 @@
                                     <button><img src="img/header/vertical-elepses.png" alt=""></button>
                                 </div>
                             </div>
-                            <img src="img/main/image-of-points.jpg" alt="stactics">
+                            <div class="stats">
+                                <div class="stats-top">
+                                    <ul class="vertical">
+                                        <li>400k</li>
+                                        <li>300k</li>
+                                        <li>200k</li>
+                                        <li>100k</li>
+                                    </ul>
+                                    <img src="img/main/image-of-points.jpg" alt="stactics">
+                                </div>
+                                <div class="stats-bottom">
+                                    <ul class="horizontal">
+                                        <li>Jan</li>
+                                        <li>Feb</li>
+                                        <li>Mar</li>
+                                        <li>Apr</li>
+                                        <li>May</li>
+                                        <li>Jun</li>
+                                        <li>Jul</li>
+                                        <li>Aug</li>
+                                        <li>Sep</li>
+                                        <li>Oct</li>
+                                        <li>Nov</li>
+                                        <li>Doc</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="block-per-hour">
                             <p>Revenue Per Hour</p>
                             <img src="img/main/revenue-per-hours.png" alt="150&#36;">
                             <div><span class="down">1020</span> <span class="up">1020</span></div>
                         </div>
-                        <div class="block-feeds">
-                            <p>Customers Feed</p>
-                            <div>
-                                <div>
-                                    <img src="img/main/sophie-turner.png" alt="sophie-turner">
-                                    <span>10 Min Ago</span>
+                    </div>
+                    <div class="container-inner-bottom">
+                        <div class="container-inner-bottom-left">
+                            <div class="block-feeds">
+                                <p>Customers Feed</p>
+                                <div class="block-top">
+                                    <div class="name-actor">
+                                        <img src="img/main/sophie-turner.png" alt="sophie-turner">
+                                        <span>10 Min Ago</span>
+                                    </div>
+                                    <div class="statements">
+                                        <p><span>Sophie Turner</span> is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            texteversince the 1500s, when an
+                                        </p>
+                                        <div class="bottom-column">
+                                            <p><span>Sophie Turner</span> is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                            </p>
+                                            <p><span>Sophie Turner</span> is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p><span>Sophie Turner</span>is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                    since
-                                    the
-                                    1500s, when an</p>
-                            </div>
-                            <div>
-                                <p><span>Sophie Turner</span>is simply dummy text of the printing and typesetting
-                                    industry.
-                                    Lorem Ipsum has been the
-                                    industry's standard dummy text ever since the 1500s</p>
-                                <p><span>Sophie Turner</span>is simply dummy text of the printing and typesetting
-                                    industry.
-                                    Lorem Ipsum has been the
-                                    industry's standard dummy text ever since the 1500s</p>
-                            </div>
-                            <div>
-                                <div>
-                                    <img src="img/main/peter-quill.png" alt="peter-quill">
-                                    <span>15 Min Ago</span>
-                                    <p><span>Peter Quill</span>is simply dummy text of the printing and typesetting
-                                        industry.
-                                        Lorem Ipsum has been the
-                                        industry's standard dummy text ever since the 1500s</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-tasks">
-                            <p>Todays Task</p>
 
+                                <div class="block-bottom">
+                                    <div class="name-actor">
+                                        <img src="img/main/peter-quill.png" alt="peter-quill">
+                                        <span>15 Min Ago</span>
+                                    </div>
+                                    <div class="statements">
+                                        <p>
+                                            <span>Peter Quill</span>is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="block-progress">
-                            <p>Progress</p>
-                            <img src="img/main/progress.png" alt="150&#36;">
-                            <span>$150,0000</span>
-                            <div><span class="down">1020</span> <span class="up">1020</span></div>
-                        </div>
-                        <div class="block-shipments">
-                            <p>Shipments</p>
-                            <img src="img/main/shipments.png" alt="150&#36;">
-                            <div>
-                                <span>$15,000</span>
-                                <div>
-                                    <span class="down">1020</span> <span class="up">1020</span>
+                        <div class="container-inner-bottom-right">
+                            <div class="container-top">
+                                <div class="block-tasks">
+                                    <p>Todays Task</p>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <label class="label">
+                                                    <input class="checkbox" type="checkbox" name="ok">
+                                                    <span class="fake"></span>
+                                                </label>
+                                                <span class="task">Arrange</span>
+                                            </div>
+                                            <span class="comment">simply dummy text of the printing and......</span>
+                                            <span class="time">12:24 AM</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <label class="label">
+                                                    <input class="checkbox" type="checkbox" name="ok">
+                                                    <span class="fake"></span>
+                                                </label>
+                                                <span class="task">Shipment</span>
+                                            </div>
+                                            <span class="comment">simply dummy text of the printing and......</span>
+                                            <span class="time">1:10 AM</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <label class="label">
+                                                    <input class="checkbox" type="checkbox" name="ok">
+                                                    <span class="fake"></span>
+                                                </label>
+                                                <span class="task">Make</span>
+                                        </div>
+                                            <span class="comment">simply dummy text of the printing......</span>
+                                            <span class="time">1:24 AM</span>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <label class="label">
+                                                    <input class="checkbox" type="checkbox" name="ok">
+                                                    <span class="fake"></span>
+                                                </label>
+                                                <span class="task">Review</span>
+                                            </div>
+                                            <span class="comment">simply dummy text of the printing and......</span>
+                                            <span class="time">1:30 AM</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container-bottom">
+                                <div class="block-progress">
+                                    <p>Progress</p>
+                                    <img src="img/main/progress.png" alt="150&#36;">
+                                    <span class="quantity">$150,0000</span>
+                                    <div>
+                                        <span class="down">1020</span> <span class="up">1020</span>
+                                    </div>
+                                </div>
+                                <div class="block-shipments">
+                                    <p>Shipments</p>
+                                    <img src="img/main/shipments.png" alt="150&#36;">
+                                    <div>
+                                        <span class="quantity">$15,000</span>
+                                        <div>
+                                            <span class="down">1020</span> <span class="up">1020</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -172,77 +257,81 @@
                 </main>
                 <aside>
                     <div class="container">
-                        <div>
-                            <button><img src="img/aside/users.png" alt="people"></button>
-                            <button><img src="img/aside/chat.png" alt="chat"></button>
+                        <div class="container-btn">
+                            <button class="active"><img src="img/aside/users.png" alt="people"></button>
+                            <button><img src="img/aside/chat-white.png" alt="chat"></button>
                             <button><img src="img/aside/like.png" alt="like"></button>
                         </div>
-                        <div>
-                            <img src="img/aside/jenтifer-lawrence.jpg" alt="jenтifer-lawrence">
+                        <div class="container-acters">
                             <div>
-                                <p>Jennifer Lawrence</p>
-                                <span>Cheif Authority</span>
+                                <img src="img/aside/jenтifer-lawrence.jpg" alt="jenтifer-lawrence">
+                                <div class="name">
+                                    <p>Jennifer Lawrence</p>
+                                    <span>Cheif Authority</span>
+                                </div>
+                                <button><img src="img/aside/chat.png" alt="chat"></button>
                             </div>
-                            <button><img src="img/aside/chat.png" alt="chat"></button>
-                        </div>
-                        <div>
-                            <img src="img/aside/brad-pitt.jpg" alt="brad-pitt">
                             <div>
-                                <p>Brad Pitt</p>
-                                <span>Cheif Authority</span>
+                                <img src="img/aside/brad-pitt.jpg" alt="brad-pitt">
+                                <div class="name">
+                                    <p>Brad Pitt</p>
+                                    <span>Cheif Authority</span>
+                                </div>
+                                <button><img src="img/aside/chat.png" alt="chat"></button>
                             </div>
-                            <button><img src="img/aside/chat.png" alt="chat"></button>
-                        </div>
-                        <div>
-                            <img src="img/aside/leonardo-di.jpg" alt="leonardo-dicaprio">
                             <div>
-                                <p>Leonardo Dicaprio</p>
-                                <span>Cheif Authority</span>
+                                <img src="img/aside/leonardo-di.jpg" alt="leonardo-dicaprio">
+                                <div class="name">
+                                    <p>Leonardo Dicaprio</p>
+                                    <span>Cheif Authority</span>
+                                </div>
+                                <button><img src="img/aside/chat.png" alt="chat"></button>
                             </div>
-                            <button><img src="img/aside/chat.png" alt="chat"></button>
-                        </div>
-                        <div>
-                            <img src="img/aside/jesse-eisenberg.jpg" alt="jesse-eisenberg">
                             <div>
-                                <p>Jesse Eisenberg</p>
-                                <span>Cheif Authority</span>
+                                <img src="img/aside/jesse-eisenberg.jpg" alt="jesse-eisenberg">
+                                <div class="name">
+                                    <p>Jesse Eisenberg</p>
+                                    <span>Cheif Authority</span>
+                                </div>
+                                <button><img src="img/aside/chat.png" alt="chat"></button>
                             </div>
-                            <button><img src="img/aside/chat.png" alt="chat"></button>
-                        </div>
-                        <div>
-                            <img src="img/aside/kristen-stewart.jpg" alt="kristen-stewart">
                             <div>
-                                <p>kristen Stewart</p>
-                                <span>Cheif Authority</span>
+                                <img src="img/aside/kristen-stewart.jpg" alt="kristen-stewart">
+                                <div class="name">
+                                    <p>kristen Stewart</p>
+                                    <span>Cheif Authority</span>
+                                </div>
+                                <button><img src="img/aside/chat.png" alt="chat"></button>
                             </div>
-                            <button><img src="img/aside/chat.png" alt="chat"></button>
-                        </div>
-                        <div>
-                            <img src="img/aside/ben-affleсk.jpg" alt="ben-affleсk">
                             <div>
-                                <p>Ben Affleck</p>
-                                <span>Cheif Authority</span>
+                                <img src="img/aside/ben-affleсk.jpg" alt="ben-affleсk">
+                                <div class="name">
+                                    <p>Ben Affleck</p>
+                                    <span>Cheif Authority</span>
+                                </div>
+                                <button><img src="img/aside/chat.png" alt="chat"></button>
                             </div>
-                            <button><img src="img/aside/chat.png" alt="chat"></button>
                         </div>
-                        <form class="search" action="#" method="get">
-                            <input type="text">
-                            <input type="submit">
-                            <input type="submit">
+                        <form action="#" method="get">
+                            <input class="text" type="text" placeholder="Search Peoples, Chats and Reviews">
+                            <div class="container-btns">
+                                <input class="search" type="submit" value=" ">
+                                <input class="write" type="submit" value=" ">
+                            </div>
                         </form>
                         <div class="social">
                             <p>Featured Companys</p>
-                            <div>
-                                <a href=""><img src="img/aside/social/rdio.png" alt="rdio"></a>
-                                <a href=""><img src="img/aside/social/css-3.png" alt="css-3"></a>
-                                <a href=""><img src="img/aside/social/deviantart.png" alt="deviantart"></a>
+                            <div class="top-icons">
+                                <a class="rdio" href="#"><img src="img/aside/social/rdio.png" alt="rdio"></a>
+                                <a class="css-3" href="#"><img src="img/aside/social/css-3.png" alt="css-3"></a>
+                                <a class="deviantart" href="#"><img src="img/aside/social/deviantart.png"
+                                        alt="deviantart"></a>
                             </div>
-                            <div>
-                                <a href=""><img src="img/aside/social/xing.png" alt="xing"></a>
-                                <a href=""><img src="img/aside/social/vimeo.png" alt="vimeo"></a>
-                                <a href=""><img src="img/aside/social/vk.png" alt="vk"></a>
+                            <div class="bottom-icons">
+                                <a class="xing" href="#"><img src="img/aside/social/xing.png" alt="xing"></a>
+                                <a class="vimeo" href="#"><img src="img/aside/social/vimeo.png" alt="vimeo"></a>
+                                <a class="vk" href="#"><img src="img/aside/social/vk.png" alt="vk"></a>
                             </div>
-
                         </div>
                     </div>
                 </aside>
