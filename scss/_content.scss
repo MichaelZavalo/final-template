@@ -297,12 +297,12 @@ main {
     li {
         display: flex;
         justify-content: space-between;
-        border-bottom: 2px solid #EDEDED;
+        border-bottom: 2px solid #ededed;
         width: 100%;
         line-height: 37px;
     }
     li:first-of-type {
-        border-top: 2px solid #EDEDED;
+        border-top: 2px solid #ededed;
         line-height: 35px;
     }
     li > div {
@@ -310,6 +310,9 @@ main {
         justify-content: center;
         align-content: center;
         line-height: 37px;
+    }
+    li:nth-child(even) {
+        background-color: #f3f3f3ea;
     }
     .task {
         font-weight: 900;

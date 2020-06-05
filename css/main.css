@@ -640,12 +640,12 @@ main .container-inner-top {
 .block-tasks li {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #EDEDED;
+  border-bottom: 2px solid #ededed;
   width: 100%;
   line-height: 37px;
 }
 .block-tasks li:first-of-type {
-  border-top: 2px solid #EDEDED;
+  border-top: 2px solid #ededed;
   line-height: 35px;
 }
 .block-tasks li > div {
@@ -653,6 +653,9 @@ main .container-inner-top {
   justify-content: center;
   align-content: center;
   line-height: 37px;
+}
+.block-tasks li:nth-child(even) {
+  background-color: #f3f3f3ea;
 }
 .block-tasks .task {
   font-weight: 900;
