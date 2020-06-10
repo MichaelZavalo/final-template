@@ -8,6 +8,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
     .container-inner-top {
         display: flex;
         justify-content: space-between;
@@ -24,9 +25,9 @@ main {
     max-width: 704px;
     background-color: #fff;
     padding: 30px;
-    -webkit-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
 }
 
 .name {
@@ -36,6 +37,7 @@ main {
     p {
         color: #767676;
         font-size: 14px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
     }
 
@@ -43,6 +45,7 @@ main {
         height: 24px;
         color: #bfbfbf;
         font-size: 12px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
         border: none;
         width: 42.5px;
@@ -85,6 +88,7 @@ main {
     li {
         font-size: 12px;
         color: #bfbfbf;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
     }
 
@@ -118,12 +122,13 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    -webkit-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
 
     p {
         font-size: 14px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
         color: #777;
     }
@@ -132,9 +137,11 @@ main {
         margin: 25px 0;
     }
 
-    .down, .up {
+    .down,
+    .up {
         position: relative;
         padding-left: 9px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-size: 12px;
         color: #bfbfbf;
         font-weight: 700;
@@ -144,7 +151,8 @@ main {
         margin-left: 5px;
     }
 
-    .down::before, .up::before {
+    .down::before,
+    .up::before {
         content: '';
         position: absolute;
         left: -1px;
@@ -173,35 +181,43 @@ main {
     justify-content: space-between;
     width: 100%;
 }
+
 .container-inner-bottom-left {
     display: flex;
     justify-content: space-between;
     max-width: 467px;
     max-height: 508px;
 }
+
 .block-feeds {
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #fff;
     padding: 31px 30px 35px 30px;
-    -webkit-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+
     p {
         font-size: 14px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
         color: #777;
     }
+
     span {
         font-size: 8px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         color: #979796;
         margin-top: 13px;
     }
+
     .block-top {
         margin-top: 34px;
         display: flex;
         justify-content: space-between;
+
         .statements::before {
             content: '';
             position: absolute;
@@ -213,10 +229,12 @@ main {
             border-left: 4px solid #f1f1f1;
         }
     }
+
     .name-actor {
         display: flex;
         flex-direction: column;
     }
+
     .statements {
         display: flex;
         flex-direction: column;
@@ -225,28 +243,34 @@ main {
         max-width: 345px;
         margin-left: 20px;
         position: relative;
+
         p {
             color: #777;
+            font-family: 'lato', 'myriad-reg', sans-serif;
             font-size: 12px;
             padding: 21px 18px;
             border: 1px solid #f1f1f1;
             background-color: #fcfcfc;
             font-weight: 300;
         }
-        span { 
-            color:#777;
+
+        span {
+            color: #777;
             font-size: 12px;
+            font-family: 'lato', 'myriad-reg', sans-serif;
             font-weight: 700;
         }
+
         .bottom-column {
             margin-top: 20px;
             margin-left: 30px;
         }
+
         p:nth-child(2) {
             margin-top: 20px;
         }
     }
-    
+
     .block-bottom {
         display: flex;
         margin-top: 20px;
@@ -262,12 +286,14 @@ main {
     justify-content: space-between;
 
 }
+
 .container-top {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+
 .block-tasks {
     display: flex;
     flex-direction: column;
@@ -275,14 +301,17 @@ main {
     background-color: #fff;
     padding: 30px 29px 23px 31px;
     width: 100%;
-    -webkit-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+
     p {
         font-size: 14px;
         font-weight: 700;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         color: #777;
     }
+
     ul {
         display: flex;
         justify-content: center;
@@ -291,9 +320,11 @@ main {
         margin-top: 20px;
         width: 441px;
     }
+
     span {
         font-size: 12px;
     }
+
     li {
         display: flex;
         justify-content: space-between;
@@ -301,20 +332,25 @@ main {
         width: 100%;
         line-height: 37px;
     }
+
     li:first-of-type {
         border-top: 2px solid #ededed;
         line-height: 35px;
     }
-    li > div {
+
+    li>div {
         display: flex;
         justify-content: center;
         align-content: center;
         line-height: 37px;
     }
+
     li:nth-child(even) {
         background-color: #f3f3f3ea;
     }
+
     .task {
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 900;
         background: -webkit-linear-gradient(right, #fd4e75, #fc7858);
         -webkit-background-clip: text;
@@ -322,17 +358,22 @@ main {
         margin-left: 10px;
         line-height: 35px;
     }
+
     .comment {
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 400;
         color: #BFBFBF;
     }
+
     .time {
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
         color: #9C9C9C;
         position: relative;
         text-align: start;
         width: 55px;
     }
+
     .time:before {
         content: '';
         position: absolute;
@@ -344,13 +385,16 @@ main {
         top: 12px;
         left: -20px;
     }
+
     .label {
         height: 32px;
         align-self: center;
     }
+
     .checkbox {
         display: none;
     }
+
     .fake {
         display: inline-block;
         width: 20px;
@@ -362,6 +406,7 @@ main {
         align-self: center;
         cursor: pointer;
     }
+
     .fake::before {
         content: url(../img/main/checked.png);
         align-content: center;
@@ -379,7 +424,8 @@ main {
         opacity: 0;
         cursor: pointer;
     }
-    .checkbox:checked + .fake::before {
+
+    .checkbox:checked+.fake::before {
         opacity: 1;
     }
 }
@@ -400,11 +446,13 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    -webkit-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+
     p {
         font-size: 14px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
         color: #777;
     }
@@ -415,6 +463,7 @@ main {
 
     .quantity {
         font-size: 20px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
         background: -webkit-linear-gradient(120deg, #8841af, #708ae6);
         -webkit-background-clip: text;
@@ -422,11 +471,13 @@ main {
         margin-bottom: 10px;
     }
 
-    .down, .up {
+    .down,
+    .up {
         position: relative;
         padding-left: 9px;
         font-size: 12px;
         color: #bfbfbf;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
     }
 
@@ -434,7 +485,8 @@ main {
         margin-left: 5px;
     }
 
-    .down::before, .up::before {
+    .down::before,
+    .up::before {
         content: '';
         position: absolute;
         left: -1px;
@@ -466,11 +518,13 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    -webkit-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
-    box-shadow: 1px 1px 19px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 19px 0px rgba(0, 0, 0, 0.15);
+
     p {
         font-size: 14px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
         color: #777;
     }
@@ -488,15 +542,18 @@ main {
 
     .quantity {
         font-size: 20px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 700;
         background: -webkit-linear-gradient(120deg, #fd4e75, #fc7858);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    .down, .up {
+    .down,
+    .up {
         position: relative;
         padding-left: 9px;
+        font-family: 'lato', 'myriad-reg', sans-serif;
         font-size: 12px;
         color: #bfbfbf;
         font-weight: 700;
@@ -506,7 +563,8 @@ main {
         margin-left: 5px;
     }
 
-    .down::before, .up::before {
+    .down::before,
+    .up::before {
         content: '';
         position: absolute;
         left: -1px;

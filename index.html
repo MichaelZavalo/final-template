@@ -12,46 +12,43 @@
 </head>
 
 <body>
-    <div class="wraper">
-        <nav>
-            <div class="navigation">
-                <a class="logo" href="#">
-                    <span>W</span>
-                </a>
-                <a class="home active" href="#">Home</a>
-                <a class="stactics" href="#">Stactics</a>
-                <a class="users" href="#">Users</a>
-                <a class="settings" href="#">Settings</a>
-                <a class="quires" href="#">Quires</a>
-            </div>
-            <a class="power-off" href="#">
-                <img src="img/nav/btn-power.png" alt="power-off">
+    <div class="wrapper">
+        <nav class="navigation">
+            <a class="logo" href="#">
+                <span>W</span>
             </a>
+            <a class="home active" href="#">Home</a>
+            <a class="stactics" href="#">Stactics</a>
+            <a class="users" href="#">Users</a>
+            <a class="settings" href="#">Settings</a>
+            <a class="quires" href="#">Quires</a>
+            <button class="power-off">
+                <img src="img/nav/btn-power.png" alt="power-off">
+            </button>
         </nav>
-        <div class="container-inner">
+        <div class="container">
             <header>
                 <div class="container-top">
                     <div class="btns-left">
-                        <button><img src="img/header/first.png" alt="btn"></button>
-                        <button><img src="img/header/folders.png" alt="folders"></button>
-                        <button><img src="img/header/settings.png" alt="settings"></button>
+                        <button class="first"></button>
+                        <button class="folders"></button>
+                        <button class="settings"></button>
                     </div>
                     <form class="search" action="#" method="get">
                         <input class="text" type="text" placeholder="Search Anything Here....">
                         <input class="submit" type="submit" value=" ">
                     </form>
                     <div class="btns-right">
-                        <button><img src="img/header/upload.png" alt="upload"></button>
-                        <button><img src="img/header/envelope.png" alt="envelope"></button>
-                        <button class="active"><img src="img/header/planet.png" alt="planet"></button>
+                        <button class="upload"></button>
+                        <button class="envelope"></button>
+                        <button class="planet active"></button>
                         <div>
                             <img src="img/header/kendal-jenner.png" alt="kendal-jenner">
                             <div class="name-people">
                                 <p>kendall Jenner</p>
                                 <span>Cheif Authority</span>
                             </div>
-                            <button class="additionaly"><img src="img/header/vertical-elepses.png"
-                                    alt="additionally"></button>
+                            <button class="additionaly"></button>
                         </div>
                     </div>
                 </div>
@@ -94,7 +91,7 @@
                     <button class="add-statistic"><span>+ Add Stactics</span></button>
                 </div>
             </header>
-            <div class="container-inner-content">
+            <div class="container-inner">
                 <main>
                     <div class="container-inner-top">
                         <div class="block-monthly-progress">
@@ -157,10 +154,12 @@
                                         </p>
                                         <div class="bottom-column">
                                             <p><span>Sophie Turner</span> is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s
                                             </p>
                                             <p><span>Sophie Turner</span> is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                text ever since the 1500s
                                             </p>
                                         </div>
                                     </div>
@@ -174,7 +173,8 @@
                                     <div class="statements">
                                         <p>
                                             <span>Peter Quill</span>is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s
                                         </p>
                                     </div>
                                 </div>
@@ -214,7 +214,7 @@
                                                     <span class="fake"></span>
                                                 </label>
                                                 <span class="task">Make</span>
-                                        </div>
+                                            </div>
                                             <span class="comment">simply dummy text of the printing......</span>
                                             <span class="time">1:24 AM</span>
                                         </li>
@@ -258,18 +258,18 @@
                 <aside>
                     <div class="container">
                         <div class="container-btn">
-                            <button class="active"><img src="img/aside/users.png" alt="people"></button>
-                            <button><img src="img/aside/chat-white.png" alt="chat"></button>
-                            <button><img src="img/aside/like.png" alt="like"></button>
+                            <button class=" users active"></button>
+                            <button class="chat"></button>
+                            <button class="like"></button>
                         </div>
-                        <div class="container-acters">
+                        <div class="container-actors">
                             <div>
                                 <img src="img/aside/jenтifer-lawrence.jpg" alt="jenтifer-lawrence">
                                 <div class="name">
                                     <p>Jennifer Lawrence</p>
                                     <span>Cheif Authority</span>
                                 </div>
-                                <button><img src="img/aside/chat.png" alt="chat"></button>
+                                <button></button>
                             </div>
                             <div>
                                 <img src="img/aside/brad-pitt.jpg" alt="brad-pitt">
@@ -277,7 +277,7 @@
                                     <p>Brad Pitt</p>
                                     <span>Cheif Authority</span>
                                 </div>
-                                <button><img src="img/aside/chat.png" alt="chat"></button>
+                                <button></button>
                             </div>
                             <div>
                                 <img src="img/aside/leonardo-di.jpg" alt="leonardo-dicaprio">
@@ -285,7 +285,7 @@
                                     <p>Leonardo Dicaprio</p>
                                     <span>Cheif Authority</span>
                                 </div>
-                                <button><img src="img/aside/chat.png" alt="chat"></button>
+                                <button></button>
                             </div>
                             <div>
                                 <img src="img/aside/jesse-eisenberg.jpg" alt="jesse-eisenberg">
@@ -293,7 +293,7 @@
                                     <p>Jesse Eisenberg</p>
                                     <span>Cheif Authority</span>
                                 </div>
-                                <button><img src="img/aside/chat.png" alt="chat"></button>
+                                <button></button>
                             </div>
                             <div>
                                 <img src="img/aside/kristen-stewart.jpg" alt="kristen-stewart">
@@ -301,7 +301,7 @@
                                     <p>kristen Stewart</p>
                                     <span>Cheif Authority</span>
                                 </div>
-                                <button><img src="img/aside/chat.png" alt="chat"></button>
+                                <button></button>
                             </div>
                             <div>
                                 <img src="img/aside/ben-affleсk.jpg" alt="ben-affleсk">
@@ -309,7 +309,7 @@
                                     <p>Ben Affleck</p>
                                     <span>Cheif Authority</span>
                                 </div>
-                                <button><img src="img/aside/chat.png" alt="chat"></button>
+                                <button></button>
                             </div>
                         </div>
                         <form action="#" method="get">

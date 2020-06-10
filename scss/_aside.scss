@@ -2,44 +2,76 @@
 --------------------------------------------*/
 aside {
     width: 289px;
+
     .container {
         display: flex;
         flex-direction: column;
+        max-width: 100%;
     }
+
     .container-btn {
         display: flex;
         background: -webkit-linear-gradient(left, #fd4e75, #fc7858);
+
         & button {
             line-height: 50px;
         }
+
         button {
             width: 90px;
+            height: 48px;
             background-color: initial;
             border: none;
             position: relative;
         }
-        button:hover, button:active {
-            background-color: rgba($color: #000000, $alpha: .2);
+
+        .users,
+        .chat,
+        .like {
+            background-position: center;
+            background-repeat: no-repeat;
         }
-        .active:after {
-            content:"";
+
+        .users {
+            background-image: url(../img/aside/users.png);
+        }
+
+        .chat {
+            background-image: url(../img/aside/chat-white.png);
+        }
+
+        .like {
+            background-image: url(../img/aside/like.png);
+        }
+
+        button::after {
+            content: "";
             display: block;
             position: absolute;
-            bottom:auto;
+            bottom: -6px;
             left: 39px;
             border-left: 6px solid transparent;
             border-top: 6px solid #FD5670;
             border-right: 6px solid transparent;
+            opacity: 0;
+        }
+
+        button:hover,
+        button:hover:after {
+            background-color: rgba($color: #000000, $alpha: .2);
+            opacity: 1;
         }
     }
-/*container-acters
+
+    /*container-acters
 --------------------------------------------*/
-    .container-acters {
+    .container-actors {
         display: flex;
         flex-direction: column;
         max-height: 516px;
         overflow-y: scroll;
-        > div {
+
+        >div {
             display: flex;
             padding: 20px 0;
             border-bottom: 2px solid #F1F1F1;
@@ -47,43 +79,58 @@ aside {
             margin: 0 auto;
             justify-content: space-between;
         }
+
         >div:first-of-type {
             padding-top: 24px;
         }
+
         >div:last-of-type {
             border-bottom: none;
         }
+
         .name {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
             width: 110px;
         }
+
         p {
             font-size: 13px;
+            font-family: 'lato', 'myriad-reg', sans-serif;
             font-weight: 700;
             color: #777;
         }
+
         span {
+            font-family: 'lato', 'myriad-reg', sans-serif;
+            font-weight: 400;
             font-size: 10px;
             color: #bfbfbf;
         }
+
         button {
-            padding: 10px;
+            width: 40px;
             border: none;
             background-color: inherit;
+            background-image: url(../img/aside/chat.png);
+            background-position: center;
+            background-repeat: no-repeat;
         }
+
         button:hover {
             background-color: #f5f5dc;
         }
     }
-/*form
+
+    /*form
 --------------------------------------------*/
     form {
         background-color: #fcfcfc;
         line-height: 50px;
         display: flex;
         justify-content: space-around;
+
         input {
             background-color: inherit;
             border: none;
@@ -92,49 +139,63 @@ aside {
             width: 23px;
             height: 20px;
         }
+
         .text {
             font-size: 10px;
-            color: #c0c0c0;
+            color: #000;
+            font-family: 'lato', 'myriad-reg', sans-serif;
             font-weight: 300;
             border-bottom: 2px solid #E9E9E9;
             width: 160px;
             height: 40px;
         }
+
         .search {
             background-image: url(../img/aside/zoom-in.png);
         }
+
         .write {
             background-image: url(../img/aside/pen.png);
         }
-        .search:hover, .write:hover {
+
+        .search:hover,
+        .write:hover {
             cursor: pointer;
             background-color: #a37f76;
         }
     }
-/*social
+
+    /*social
 --------------------------------------------*/
     .social {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 29px 39px;
+
         p {
             font-size: 14px;
+            font-family: 'lato', 'myriad-reg', sans-serif;
             font-weight: 700;
             color: #777777;
         }
+
         .top-icons {
             margin-top: 30px;
         }
+
         .bottom-icons {
             margin-top: 16px;
         }
-        .top-icons, .bottom-icons {
+
+        .top-icons,
+        .bottom-icons {
             line-height: 55px;
             display: flex;
             justify-content: space-between;
             width: 192px;
         }
+
         a {
             display: flex;
             width: 55px;
@@ -144,27 +205,33 @@ aside {
             background-position: center;
             align-items: center;
             justify-content: center;
-            -webkit-box-shadow: inset 0px 0px 6px 0px rgba(255,255,255,1);
-            -moz-box-shadow: inset 0px 0px 6px 0px rgba(255,255,255,1);
-            box-shadow: inset 0px 0px 6px 0px rgba(255,255,255,1);
+            -webkit-box-shadow: inset 0px 0px 6px 0px rgba(255, 255, 255, 1);
+            -moz-box-shadow: inset 0px 0px 6px 0px rgba(255, 255, 255, 1);
+            box-shadow: inset 0px 0px 6px 0px rgba(255, 255, 255, 1);
         }
+
         .rdio {
-            background: -webkit-linear-gradient( 120deg, #6359b0, #b26ae1);
+            background: -webkit-linear-gradient(120deg, #6359b0, #b26ae1);
         }
+
         .css-3 {
-            background: -webkit-linear-gradient( 120deg, #4bb9c3, #52e7c5);
+            background: -webkit-linear-gradient(120deg, #4bb9c3, #52e7c5);
         }
+
         .deviantart {
-            background: -webkit-linear-gradient( 120deg, #ad6a77, #f6b797);
+            background: -webkit-linear-gradient(120deg, #ad6a77, #f6b797);
         }
+
         .xing {
-            background: -webkit-linear-gradient( 120deg, #8841af, #708ae6);
+            background: -webkit-linear-gradient(120deg, #8841af, #708ae6);
         }
+
         .vimeo {
-            background: -webkit-linear-gradient( 120deg, #5885e8, #29cddd);
+            background: -webkit-linear-gradient(120deg, #5885e8, #29cddd);
         }
+
         .vk {
-            background: -webkit-linear-gradient( 120deg, #f48982, #fbda89);
+            background: -webkit-linear-gradient(120deg, #f48982, #fbda89);
         }
     }
 }
