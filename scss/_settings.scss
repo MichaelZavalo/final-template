@@ -32,13 +32,15 @@ li {
     display: flex;
     max-width: 1366px;
     margin: 0 auto;
+    /*need to fix*/
+    overflow-x: hidden;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 95%;
+    width: 95%;
 }
 
 .container-inner {

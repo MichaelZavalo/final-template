@@ -18,7 +18,7 @@ aside {
         }
 
         button {
-            width: 90px;
+            width: 33.3%;
             height: 48px;
             background-color: initial;
             border: none;
@@ -49,16 +49,17 @@ aside {
             display: block;
             position: absolute;
             bottom: -6px;
-            left: 39px;
+            left: 47%;
             border-left: 6px solid transparent;
             border-top: 6px solid #FD5670;
             border-right: 6px solid transparent;
             opacity: 0;
         }
 
-        button:hover,
-        button:hover:after {
+        button:hover {
             background-color: rgba($color: #000000, $alpha: .2);
+        }
+        button:hover:after {
             opacity: 1;
         }
     }
@@ -129,7 +130,7 @@ aside {
         background-color: #fcfcfc;
         line-height: 50px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
         input {
             background-color: inherit;

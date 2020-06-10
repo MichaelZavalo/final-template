@@ -4,7 +4,7 @@ main {
     background-color: #ebebeb;
     padding: 20px;
     display: flex;
-    max-width: 1080px;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -12,6 +12,7 @@ main {
     .container-inner-top {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
     }
 }
@@ -112,7 +113,7 @@ main {
     }
 }
 
-/*block-per-hours
+/*block-per-hour
 --------------------------------------------*/
 
 .block-per-hour {
@@ -179,6 +180,7 @@ main {
 .container-inner-bottom {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -217,17 +219,6 @@ main {
         margin-top: 34px;
         display: flex;
         justify-content: space-between;
-
-        .statements::before {
-            content: '';
-            position: absolute;
-            display: block;
-            top: 36%;
-            left: 2%;
-            border-radius: 5%;
-            height: 187px;
-            border-left: 4px solid #f1f1f1;
-        }
     }
 
     .name-actor {
@@ -242,7 +233,6 @@ main {
         align-items: center;
         max-width: 345px;
         margin-left: 20px;
-        position: relative;
 
         p {
             color: #777;
@@ -264,6 +254,18 @@ main {
         .bottom-column {
             margin-top: 20px;
             margin-left: 30px;
+            position: relative;
+        }
+
+        .bottom-column::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 0;
+            left: -7%;
+            border-radius: 5%;
+            height: 100%;
+            border-left: 4px solid #f1f1f1;
         }
 
         p:nth-child(2) {
@@ -283,6 +285,7 @@ main {
     max-width: 501px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
 
 }

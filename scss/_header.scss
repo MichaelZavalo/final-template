@@ -3,6 +3,154 @@
 header {
     width: 100%;
 
+    /*.mobile-navigation
+------------------------------------------*/
+    .mobile-navigation {
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: -webkit-linear-gradient(left, #fd4e75, #fc7858);
+        width: 100%;
+        height: 50px;
+        display: none;
+
+        .search {
+            background-color: #f8f8f8;
+            height: 33px;
+            border-radius: 18px;
+            border: 1px solid #F1F1F1;
+            width: 50%;
+            display: none;
+            justify-content: space-between;
+
+            .text {
+                width: 84%;
+                border: none;
+                height: 100%;
+                line-height: 33px;
+                color: #000;
+                font-size: 12px;
+                background-color: inherit;
+                border-radius: 18px;
+                margin-left: 10px;
+                font-family: 'lato', 'myriad-reg', sans-serif;
+                font-weight: 400;
+            }
+
+            .submit {
+                border: none;
+                border-radius: 18px;
+                width: 20px;
+                height: 100%;
+                line-height: 33px;
+                background-color: inherit;
+                background-image: url(../img/header/zoom-in.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 13px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .logo {
+            background: #ffffff;
+            align-items: center;
+            width: 40px;
+            text-decoration: none;
+            padding-top: 0px;
+            margin-top: 0px;
+            height: 40px;
+            -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+        }
+
+        .logo>span {
+            display: block;
+            line-height: 40px;
+            font-family: "deftonestylus", "myriad-reg", sans-serif;
+            background: -webkit-linear-gradient(bottom, #fd4e75, #fc7858);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 30px;
+            width: 40px;
+            margin-left: 2px;
+        }
+
+        .btns-mobile {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+            height: 50px;
+            align-items: center;
+        }
+        .menu-btn {
+            display: block;
+            position: relative;
+            height: 40px;
+            width: 40px;
+            line-height: 70px;
+            background-color: #fff;
+            outline: 0;
+            padding: 0;
+            border: none;
+            border-radius: 50%;
+            color: inherit;
+            &:hover {
+                background-color: #d889e9;
+            }
+
+            span,
+            span::before,
+            span::after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -1px;
+                margin-left: -10px;
+                width: 20px;
+                height: 2px;
+                background-color: #262626;
+            }
+
+            span::after,
+            span::before {
+                content: "";
+                transition: .2s;
+            }
+
+            span::before {
+                transform: translateY(-5px);
+            }
+
+            span::after {
+                transform: translateY(5px);
+            }
+        }
+        .power-off {
+            width: 100%;
+            margin-top: auto;
+            transition-duration: 1s;
+            height: 100%;
+            width: 40px;
+            background-color: inherit;
+            border: none;
+            background-image: url(../img/nav/btn-power.png);
+            background-position: center;
+            background-repeat: no-repeat;
+    
+            &:hover {
+                background-color: rgb(240, 98, 159);
+                /*background-color: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(212, 30, 85, 1) 0%, rgba(240, 66, 8, 1) 100%);*/
+            }
+        }
+    }
+
     .container-top {
         display: flex;
         justify-content: space-between;
@@ -122,7 +270,7 @@ header {
             background-image: url(../img/header/vertical-elepses.png);
             background-repeat: no-repeat;
             background-position: center;
-            width: 36px;
+            width: 60px;
             height: 70px;
             border: none;
         }
