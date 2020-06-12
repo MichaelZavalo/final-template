@@ -1,12 +1,12 @@
 /*aside
---------------------------------------------*/
+---------------------------------------------*/
 aside {
     width: 289px;
 
     .container {
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        width: 100%;
     }
 
     .container-btn {
@@ -18,18 +18,17 @@ aside {
         }
 
         button {
+            position: relative;
             width: 33.3%;
             height: 48px;
             background-color: initial;
             border: none;
-            position: relative;
         }
 
         .users,
         .chat,
         .like {
-            background-position: center;
-            background-repeat: no-repeat;
+            background: center no-repeat;
         }
 
         .users {
@@ -44,12 +43,13 @@ aside {
             background-image: url(../img/aside/like.png);
         }
 
-        button::after {
+        button:after {
             content: "";
-            display: block;
             position: absolute;
+            left: 50%;
             bottom: -6px;
-            left: 47%;
+            transform: translate(-50%, 0);
+            display: block;
             border-left: 6px solid transparent;
             border-top: 6px solid #FD5670;
             border-right: 6px solid transparent;
@@ -59,13 +59,14 @@ aside {
         button:hover {
             background-color: rgba($color: #000000, $alpha: .2);
         }
+
         button:hover:after {
             opacity: 1;
         }
     }
 
-    /*container-acters
---------------------------------------------*/
+/*container-acters
+---------------------------------------------*/
     .container-actors {
         display: flex;
         flex-direction: column;
@@ -74,11 +75,11 @@ aside {
 
         >div {
             display: flex;
-            padding: 20px 0;
-            border-bottom: 2px solid #F1F1F1;
+            justify-content: space-between;
             width: 85%;
             margin: 0 auto;
-            justify-content: space-between;
+            padding: 20px 0;
+            border-bottom: 2px solid #F1F1F1;
         }
 
         >div:first-of-type {
@@ -91,15 +92,15 @@ aside {
 
         .name {
             display: flex;
+            justify-content: space-between;
             flex-direction: column;
-            justify-content: space-evenly;
             width: 110px;
         }
 
         p {
-            font-size: 13px;
             font-family: 'lato', 'myriad-reg', sans-serif;
             font-weight: 700;
+            font-size: 13px;
             color: #777;
         }
 
@@ -112,11 +113,9 @@ aside {
 
         button {
             width: 40px;
-            border: none;
+            background: url(../img/aside/chat.png) center no-repeat;
             background-color: inherit;
-            background-image: url(../img/aside/chat.png);
-            background-position: center;
-            background-repeat: no-repeat;
+            border: none;
         }
 
         button:hover {
@@ -124,31 +123,30 @@ aside {
         }
     }
 
-    /*form
---------------------------------------------*/
+/*form
+---------------------------------------------*/
     form {
-        background-color: #fcfcfc;
-        line-height: 50px;
         display: flex;
         justify-content: space-evenly;
+        line-height: 50px;
+        background-color: #fcfcfc;
 
         input {
-            background-color: inherit;
-            border: none;
-            background-repeat: no-repeat;
-            background-position: center;
             width: 23px;
             height: 20px;
+            background: center no-repeat;
+            background-color: inherit;
+            border: none;
         }
 
         .text {
-            font-size: 10px;
-            color: #000;
-            font-family: 'lato', 'myriad-reg', sans-serif;
-            font-weight: 300;
-            border-bottom: 2px solid #E9E9E9;
             width: 160px;
             height: 40px;
+            font-family: 'lato', 'myriad-reg', sans-serif;
+            font-weight: 300;
+            font-size: 10px;
+            color: #000;
+            border-bottom: 2px solid #E9E9E9;
         }
 
         .search {
@@ -166,8 +164,8 @@ aside {
         }
     }
 
-    /*social
---------------------------------------------*/
+/*social
+---------------------------------------------*/
     .social {
         display: flex;
         flex-direction: column;
@@ -175,9 +173,9 @@ aside {
         padding: 29px 39px;
 
         p {
-            font-size: 14px;
             font-family: 'lato', 'myriad-reg', sans-serif;
             font-weight: 700;
+            font-size: 14px;
             color: #777777;
         }
 
@@ -191,23 +189,20 @@ aside {
 
         .top-icons,
         .bottom-icons {
-            line-height: 55px;
             display: flex;
             justify-content: space-between;
             width: 192px;
+            line-height: 55px;
         }
 
         a {
             display: flex;
-            width: 55px;
-            height: 55px;
-            border-radius: 18px;
-            background-repeat: no-repeat;
-            background-position: center;
             align-items: center;
             justify-content: center;
-            -webkit-box-shadow: inset 0px 0px 6px 0px rgba(255, 255, 255, 1);
-            -moz-box-shadow: inset 0px 0px 6px 0px rgba(255, 255, 255, 1);
+            width: 55px;
+            height: 55px;
+            background: center no-repeat;
+            border-radius: 18px;
             box-shadow: inset 0px 0px 6px 0px rgba(255, 255, 255, 1);
         }
 

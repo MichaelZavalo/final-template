@@ -8,33 +8,29 @@
     -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.2);
 
-    div {
-        margin-bottom: auto;
-    }
-
     a {
-        text-decoration: none;
+        position: relative;
         width: 100%;
-        text-align: center;
-        vertical-align: baseline;
-        color: #fff;
-        font-size: 10px;
         padding-top: 28px;
         margin-top: 30px;
-        position: relative;
         font-family: 'lato', 'myriad-reg', sans-serif;
         font-weight: 400;
+        font-size: 10px;
+        color: #fff;
+        text-align: center;
+        vertical-align: baseline;
+        text-decoration: none;
         transition-duration: 1s;
     }
 
-    /*logo
-    --------------------------------------*/
+/*logo
+---------------------------------------------*/
     .logo {
-        background: #ffffff;
-        align-items: center;
         width: 70px;
         padding-top: 0px;
         margin-top: 0px;
+        align-items: center;
+        background: #ffffff;
         -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
         box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -42,30 +38,28 @@
 
     .logo>span {
         display: block;
-        line-height: 70px;
+        width: 45px;
+        margin-left: 7px;
         font-family: 'deftonestylus', 'myriad-reg', sans-serif;
+        line-height: 70px;
+        font-size: 30px;
         background: -webkit-linear-gradient(bottom, #fd4e75, #fc7858);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 30px;
-        width: 45px;
-        margin-left: 7px;
     }
 
-    /*backgrounds for links
-    ---------------------------------------*/
+/*backgrounds for links
+---------------------------------------------*/
     a::after {
         content: "";
-        width: 0;
-        height: 0;
         position: absolute;
         top: 12px;
         right: -5px;
+        background: none;
         border-top: 7px solid transparent;
         border-left: 5px solid #fd4e75;
         border-bottom: 7px solid transparent;
         opacity: 0;
-        background: none;
     }
 
     .logo::after {
@@ -93,8 +87,7 @@
     .users,
     .settings,
     .quires {
-        background-repeat: no-repeat;
-        background-position: top;
+        background: no-repeat top;
     }
 
     .home {
@@ -118,17 +111,15 @@
     }
 
     .power-off {
-        width: 100%;
-        margin-top: auto;
-        transition-duration: 1s;
-        height: 20px;
-        margin-bottom: 20px;
         display: block;
+        width: 100%;
+        height: 20px;
+        margin-top: auto;
+        margin-bottom: 20px;
+        background: url(../img/nav/btn-power.png) center no-repeat;
         background-color: inherit;
         border: none;
-        background-image: url(../img/nav/btn-power.png);
-        background-position: center;
-        background-repeat: no-repeat;
+        transition-duration: 1s;
 
         &:hover {
             background-color: rgb(240, 98, 159);
